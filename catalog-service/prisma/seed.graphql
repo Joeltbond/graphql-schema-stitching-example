@@ -1,0 +1,89 @@
+mutation {
+  officeSupplies: createCategory(
+    data: {
+      name: "Office Supplies"
+      products: {
+        create: [
+          {
+            name: "Stapler"
+            price: 7
+            description: "Great for stapling"
+            imageUrl: "https://s3.amazonaws.com/graphql-catalog-example/b9-500x500.jpg"
+          }
+          {
+            name: "Printer Ink"
+            price: 20
+            description: "Great for printing"
+            imageUrl: "https://s3.amazonaws.com/graphql-catalog-example/printer-cartridges.jpg"
+          }
+          {
+            name: "Scissors"
+            price: 3
+            description: "Great for cutting"
+            imageUrl: "https://s3.amazonaws.com/graphql-catalog-example/71vIMZM0JqL._SL1500_.jpg"
+          }
+        ]
+      }
+    }
+  ) {
+    id
+  }
+  snacks: createCategory(
+    data: {
+      name: "Snacks"
+      products: {
+        create: [
+          {
+            name: "Malort"
+            price: 30
+            description: "Tastes like crushed up Advil"
+            imageUrl: "https://s3.amazonaws.com/graphql-catalog-example/021037010190__85648.1509206777.jpg"
+          }
+          {
+            name: "Fruit Snacks"
+            price: 7
+            description: "Andrew's favorite Acorns perk"
+            imageUrl: "hhttps://s3.amazonaws.com/graphql-catalog-example/91fuFVwZ0QL._SL1500_.jpg"
+          }
+          {
+            name: "Secret Aardvark"
+            price: 7
+            description: "Great for Aardvarking"
+            imageUrl: "https://s3.amazonaws.com/graphql-catalog-example/Aardvark_600x.jpg"
+          }
+        ]
+      }
+    }
+  ) {
+    id
+  }
+  kitchenSupplies: createCategory(
+    data: {
+      name: "Kitchen Supplies"
+      products: {
+        create: [
+          {
+            name: "Dish Detergent"
+            price: 8
+            description: "Great for washing dishes"
+            imageUrl: "https://s3.amazonaws.com/graphql-catalog-example/B0048BET4U_cascade_201305284_4627_lg.jpg"
+          }
+          {
+            name: "Electric Kettle"
+            price: 7
+            description: "For Jordan's pour-overs"
+            imageUrl: "https://s3.amazonaws.com/graphql-catalog-example/Fellow-Stagg-EKG-Electric-Pour-Over-Kettle-01_0a62002f-ef1e-43f4-8ee7-8d1555cf189c_600x600.jpg"
+          }
+          {
+            name: "Pot Holders"
+            price: 20
+            description: "Great for holding pots"
+            imageUrl: "https://s3.amazonaws.com/graphql-catalog-example/lavish-home-oven-mitts-pot-holders-m036902-64_1000.jpg"
+          }
+        ]
+      }
+    }
+  ) {
+    id
+  }
+}
